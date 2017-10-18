@@ -33,12 +33,33 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+# syntax check
+gem 'rubocop'
+# status
+gem 'statesman'
+# pagenate
+gem 'kaminari'
+# design
+gem 'bootstrap'
+# setting local env
+gem 'dotenv-rails'
+
+# attachment
+gem 'rmagick'
+gem 'rmagick', '>=2.16.0'
+gem 'paperclip'
+
+# N+1
+gem 'bullet'
+
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-  # Adds support for Capybara system testing and selenium driver
-  gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
+  # debug
+  gem 'activerecord-cause'
+  gem 'pry-rails'
 end
 
 group :development do
@@ -48,7 +69,22 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  # E-R diagram
+  gem 'rails-erd'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+group :test do
+  # test code
+  gem 'rspec-rails'
+  # Adds support for Capybara system testing and selenium driver
+  gem 'capybara', '~> 2.13'
+  # test data
+  gem 'factory_girl_rails'
+  gem 'poltergeist'
+  gem 'phantomjs'
+  # coveledge
+  gem 'simplecov'
+end
