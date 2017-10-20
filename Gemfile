@@ -45,7 +45,6 @@ gem 'bootstrap'
 gem 'dotenv-rails'
 
 # attachment
-gem 'rmagick'
 gem 'rmagick', '>=2.16.0'
 gem 'paperclip'
 
