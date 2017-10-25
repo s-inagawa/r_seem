@@ -24,11 +24,12 @@ Things you may want to cover:
 * ...
 # r_seem
 
-## 環境構築時のエラー対応
-* rmagickがインストールできない(imagemagicのversionが7である)場合
+## 環境構築
+### 1.rmagickがインストールできない場合
+* エラー発生
 ```bash
 r_seem $ bundle install
-...
+..
 An error occurred while installing rmagick (2.16.0), and Bundler cannot
 ...
 ```
@@ -46,4 +47,9 @@ brew link --force imagemagick@6
 ```bash
 brew install imagemagick@6
 brew link --force imagemagick@6
+```
+### 2.rails_erd の初期設定
+* graphvizのインストール
+```bash
+brew install graphviz
 ```
