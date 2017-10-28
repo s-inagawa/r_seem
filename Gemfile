@@ -84,6 +84,7 @@ group :test do
   gem 'factory_girl_rails'
   gem 'poltergeist'
   gem 'phantomjs'
+  gem 'database_cleaner'
   # coveledge
   gem 'simplecov'
 end
