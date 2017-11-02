@@ -10,8 +10,13 @@ require 'capybara/rspec'
 require 'capybara/poltergeist'
 require 'simplecov'
 require 'database_cleaner'
+require 'phantomjs'
 # Add additional requires below this line. Rails is not loaded until this point!
 
+require 'simplecov'
+require 'simplecov-rcov'
+SimpleCov.formatters=
+SimpleCov::Formatter::RcovFormatter
 SimpleCov.start 'rails'
 
 # Requires supporting ruby files with custom matchers and macros, etc, in
@@ -64,7 +69,12 @@ RSpec.configure do |config|
 
   config.include FactoryGirl::Syntax::Methods
   config.include Capybara::DSL
-  Capybara.javascript_driver = :poltergeist
+
+  # poltergeist settings
+Capybara.javascript_driver = : poltergeist
+Capybara.register_driver : poltergeist do |app|
+  Capybara:: Poltergeist::Driver.new(app.js-errors: false, timeout: 60)
+end
 
   # database_cleaner関連のセットアップ
   config.before(:suite) do
