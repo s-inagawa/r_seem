@@ -1,0 +1,43 @@
+AllCops:
+  TargetRubyVersion: 2.3.1
+  Exclude:
+    - vendor/**/*
+    - db/schema.rb
+    - lib/rack/utils_etension.rb
+  DisplayCopNames: true
+
+Rails:
+  Enabled: true
+
+Style/AsciiComments:
+  Enabled: false
+
+Style/Documntation:
+  Enabled: false
+
+Metrics/ClassLength:
+  Max: 100
+
+Metrics/MethodLength:
+  Max: 10
+
+Metrics/LineLength:
+  Max: 100
+
+MethodName:
+  Enabled: false
+
+Metrics/AbcSize:
+  Enabled: false
+
+CyclomaticComplexity:
+  Enabled: false
+
+Metrics/PerceivedComplexity:
+  Enabled: false
+
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+inherit_from: .rubocop_todo.yml
+
