@@ -23,7 +23,7 @@ module RSeem
       routing_specs: false,
       controller_specs: true,
       request_specs: false
-      config.time_zone = "T okyo"
+      config.time_zone = "Tokyo"
       g.fixture_replacement :factory_girl, dir: "spec/factories"
     end
   end
