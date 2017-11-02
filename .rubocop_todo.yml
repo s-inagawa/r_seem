@@ -37,6 +37,7 @@ Metrics/LineLength:
 Rails/FilePath:
   Exclude:
     - 'config/environments/development.rb'
+    - 'spec/rails_helper.rb'
 
 # Offense count: 5
 Style/Documentation:
