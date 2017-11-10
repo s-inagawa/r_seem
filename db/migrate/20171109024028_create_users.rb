@@ -5,7 +5,7 @@ class CreateUsers < ActiveRecord::Migration[5.1]
       t.string :name # userの名前
       t.boolean :admin # 管理者か非管理者かの判断
       t.string :password # userのパスワード
-      t.string :sait #
+      t.string :sait # userの興味のある分野
       t.string :position_ids # 役職クラスのID
       t.string :qualification_ids # 資格クラスのID
       t.string :project_ids # 案件クラスのID
