@@ -39,5 +39,10 @@ Metrics/PerceivedComplexity:
 Style/ClassAndModuleChildren:
   Enabled: false
 
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/**/*'
+    - 'config/**/*'
+
 inherit_from: .rubocop_todo.yml
 
