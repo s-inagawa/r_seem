@@ -51,6 +51,8 @@ gem 'paperclip'
 # N+1
 gem 'bullet'
 
+# Authenticate
+gem 'devise'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
