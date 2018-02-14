@@ -14,6 +14,8 @@ class Operation < ApplicationRecord
   # belongs_to
 
   # has_*
+  has_many :operation_users
+  has_many :users, through: :operation_users
 
   # call back
 

@@ -14,6 +14,8 @@ class Project < ApplicationRecord
   # belongs_to
 
   # has_*
+  has_many :project_users
+  has_many :users, through: :project_users
 
   # call back
 

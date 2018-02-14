@@ -14,6 +14,8 @@ class Position < ApplicationRecord
   # belongs_to
 
   # has_*
+  has_many :position_users
+  has_many :users, through: :position_users
 
   # call back
 

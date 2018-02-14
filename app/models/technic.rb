@@ -14,6 +14,8 @@ class Technic < ApplicationRecord
   # belongs_to
 
   # has_*
+  has_many :technic_users
+  has_many :users, through: :technic_users
 
   # call back
 
