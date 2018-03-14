@@ -14,6 +14,8 @@ class Qualification < ApplicationRecord
   # belongs_to
 
   # has_*
+  has_many :qualification_users
+  has_many :users, through: :qualification_users
 
   # call back
 

@@ -14,6 +14,8 @@ class Enviroment < ApplicationRecord
   # belongs_to
 
   # has_*
+  has_many :enviroment_users
+  has_many :users, through: :enviroment_users
 
   # call back
 

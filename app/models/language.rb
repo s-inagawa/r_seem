@@ -14,6 +14,8 @@ class Language < ApplicationRecord
   # belongs_to
 
   # has_*
+  has_many :language_users
+  has_many :users, through: :language_users
 
   # call back
 
